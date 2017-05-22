@@ -21,6 +21,11 @@ guessessofarEl.html("");
 function updateGuesses(key) {
   guessessofarEl.prepend(key);
 }
+
+$("#begin").on("click", function() {
+        $(".img-responsive").animate({ opacity: "1" });
+      });
+
  document.onkeyup = function(event) {
         // Determine which key was pressed
         var userGuess = event.key;
@@ -43,10 +48,12 @@ function updateGuesses(key) {
       }
     }
 }
-$("#begin").on("click", function() {
-        $(".img-responsive").animate({ opacity: "1" });
-        alert ("test");
-      });
+// var begin = $('#begin');
+// begin.on('click', function() {
+//   alert ("test");
+//         $(".img-responsive").animate({ opacity: "1" });
+//       });
+
 
 
 
